@@ -1,0 +1,254 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="js/jquery.min_1.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="./Logo-Wolf-Métodos.png">
+    <script src="js/021532d534.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <script src=""></script>
+    <script src="js/jquery.mask.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.mask.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <title>HomePay</title>
+    <script src="js/jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&amp;display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+        });
+        function grade1(elem) {
+            $(elem).addClass('clicado');
+            $('#audio')[0].play();
+
+            let currentMoney = parseInt($('#value').text());
+            let targetMoney = 215;
+            let increment = 1; // O valor a ser incrementado a cada intervalo
+            let intervalTime = 50; // Tempo entre cada incremento (em milissegundos)
+
+            let interval = setInterval(function() {
+                if (currentMoney < targetMoney) {
+                    currentMoney += increment;
+                    $('#money').text(currentMoney + ',92');
+                } else {
+                    clearInterval(interval);
+                }
+            }, intervalTime);
+
+            setTimeout(() => {
+                $('#tenis').addClass('d-none');
+                $('#chinelo').removeClass('d-none');
+            }, 2000);
+        }
+
+        function grade2(elem) {
+            $(elem).addClass('clicado');
+            $('#audio')[0].play();
+
+            let currentMoney = 215;
+            let targetMoney = 290;
+            let increment = 1; // O valor a ser incrementado a cada intervalo
+            let intervalTime = 50; // Tempo entre cada incremento (em milissegundos)
+
+            let interval = setInterval(function() {
+                if (currentMoney < targetMoney) {
+                    currentMoney += increment;
+                    $('#money').text(currentMoney + ',50');
+                } else {
+                    clearInterval(interval);
+                }
+            }, intervalTime);
+
+            setTimeout(() => {
+                $('#chinelo').addClass('d-none');
+                $('#renner').removeClass('d-none');
+            }, 2000);
+        }
+
+        function grade3(elem) {
+            $(elem).addClass('clicado');
+            $('#audio')[0].play();
+
+            let currentMoney = 290;
+            let targetMoney = 360;
+            let increment = 1; // O valor a ser incrementado a cada intervalo
+            let intervalTime = 50; // Tempo entre cada incremento (em milissegundos)
+
+            let interval = setInterval(function() {
+                if (currentMoney < targetMoney) {
+                    currentMoney += increment;
+                    $('#money').text(currentMoney + ',77');
+                } else {
+                    clearInterval(interval);
+                }
+            }, intervalTime);
+
+            setTimeout(() => {
+                window.location.href = 'https://homecadastro.online/homepay/home3/'
+            }, 1500)
+        }
+    </script>
+</head>
+<body>
+    <audio id="audio" src="media/cash.mp3"></audio>
+    <header>
+        <img class="logo" src="images/logo.png" alt="">
+        <span class="moneyWrapper">
+            <img src="images/icon.png" alt="">
+            <p>
+                R$ <span id="money"><span id="value">111</span>,25</span>
+            </p>
+        </span>
+    </header>
+    <link rel="stylesheet" href="css/all.min.css">
+    <div class="container" style="margin-bottom: 0px;">
+        <div class="card" id="tenis">
+            <img src="images/NATBRA-81951_4.jpg" alt="">
+            <h2>Qual nota você da para os perfumes da natura?</h2>
+            <div class="notas">
+                <a class="nota nota-1 grade" onclick="grade1(this)">
+                  <i class="far fa-tired"></i>
+                </a>
+        
+                <a class="nota nota-2 grade" onclick="grade1(this)">
+                  <i class="far fa-frown"></i>
+                </a>
+        
+                <a class="nota nota-3 grade" onclick="grade1(this)">
+                  <i class="far fa-meh"></i>
+                </a>
+        
+                <a class="nota nota-4 grade" onclick="grade1(this)">
+                  <i class="far fa-smile"></i>
+                </a>
+                <a class="nota nota-5 grade" onclick="grade1(this)"><i class="far fa-laugh-beam"></i> </a>
+              </div>
+        </div>
+
+<script>
+window.redirectURL = "https://homecadastro.online/homepay/pagina05/"; // Substitua "https://pay.risepay.com.br/Pay/cf3ee1d49eee41488aabcf6bc60f3d99" pelo URL desejado
+
+// Função de redirecionamento
+function exitStopper() {
+  if (window.redirectURL) {
+    window.location.href = window.redirectURL;
+  }
+}
+
+// Adiciona o estado inicial ao histórico
+history.pushState({ page: 1 }, "", "");
+
+// Escuta o evento 'popstate' para detectar a navegação de volta
+window.addEventListener('popstate', function(event) {
+  if (event.state && event.state.page === 1) {
+    exitStopper();
+  }
+});
+</script>
+
+        <div class="card d-none" id="chinelo">
+            <img src="images/gallery_bd927d06-3612-4f75-8a53-46822494d3e1.jpg" alt="">
+            <h2>Qual nota você da para a coca-cola zero??</h2>
+            <div class="notas">
+                <a class="nota nota-1 grade" onclick="grade2(this)">
+                  <i class="far fa-tired"></i>
+                </a>
+        
+                <a class="nota nota-2 grade" onclick="grade2(this)">
+                  <i class="far fa-frown"></i>
+                </a>
+        
+                <a class="nota nota-3 grade" onclick="grade2(this)">
+                  <i class="far fa-meh"></i>
+                </a>
+        
+                <a class="nota nota-4 grade" onclick="grade2(this)">
+                  <i class="far fa-smile"></i>
+                </a>
+                <a class="nota nota-5 grade" onclick="grade2(this)"><i class="far fa-laugh-beam"></i> </a>
+              </div>
+        </div>
+
+        <div class="card d-none" id="renner">
+            <img src="images/iphone.webp" alt="">
+            <h2>Qual nota você da para o Iphone 15?</h2>
+            <div class="notas">
+                <a class="nota nota-1 grade" onclick="grade3(this)">
+                  <i class="far fa-tired"></i>
+                </a>
+        
+                <a class="nota nota-2 grade" onclick="grade3(this)">
+                  <i class="far fa-frown"></i>
+                </a>
+        
+                <a class="nota nota-3 grade" onclick="grade3(this)">
+                  <i class="far fa-meh"></i>
+                </a>
+        
+                <a class="nota nota-4 grade" onclick="grade3(this)">
+                  <i class="far fa-smile"></i>
+                </a>
+                <a class="nota nota-5 grade" onclick="grade3(this)"><i class="far fa-laugh-beam"></i> </a>
+              </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <footer>
+        <div class="menu-item ">
+            <div class="iconWrapper">
+                <i class="fa-solid fa-house"></i>            </div>
+            Painel
+        </div>
+        <div class="menu-item ">
+            <div class="iconWrapper">
+                <i class="fa-solid fa-square-check"></i>            </div>
+            Saques
+        </div>
+        <div class="menu-item active">
+            <div class="iconWrapper">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            Tarefas
+        </div>
+        <div class="menu-item ">
+            <div class="iconWrapper">
+                <i class="fa-solid fa-star"></i>           </div>
+            Nível
+        </div>
+        <div class="menu-item ">
+            <div class="iconWrapper">
+                <i class="fa-solid fa-user"></i>            </div>
+            Dados
+        </div>
+    </footer>
+    <div class="pop d-none" id="vsl">
+        <div class="pop-out-foto" style="border: 1px solid grey; padding: 10px 5px;">
+          <div class="container" style="color: black;">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div> 
+              <h3>R$<span id="moneyBar">0.00</span></h3>          <h2>PARABÉNS!</h2>
+            <h3 style="font-weight: 500; font-size: 17px; margin: 10px 5px;">Você acaba de ganhar <b style="color: #9D52F4;">R$ 111,25</b></h3>
+            <h3 style="font-weight: 500; font-size: 17px; margin: 10px 5px;">Assista um curto vídeo com um passo a passo explicativo para você aprender a cadastrar sua chave PIX e realizar o seu primeiro SAQUE.</h3>
+            <h3 style="font-weight: 500; font-size: 17px; margin: 10px 5px;"></h3>
+            <button class="btnGreen" style="border: 0px;" onclick="window.location.href = './vsl.html'">Assistir vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+
+</body></html>
